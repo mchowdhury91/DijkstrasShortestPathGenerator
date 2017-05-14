@@ -18,6 +18,7 @@ a b c d ;
 Subsequent lines should be in the following format:
 
 vertex1
+
 neighborVertex1 neighborEdgeWeight1 neighborVertex2 neighborEdgeWeight2 
 
 Example small graph:
@@ -25,18 +26,23 @@ Example small graph:
 a b c d e z ;
 
 a:
+
 b 4 c 2
 
 b:
+
 c 1 d 5
 
 c:
+
 d 8 e 10
 
 d:
+
 e 2 z 6
 
 e:
+
 z 3
 
 Spacing between lines does not really matter as the string is split with the \s+ regex (so amount of whitespace is irrelevant).
